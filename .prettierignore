@@ -1,1 +1,2 @@
-docs/css/main.min.css
+docs/**/*.min.css
+docs/**/*.min.css

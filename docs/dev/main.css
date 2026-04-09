@@ -1,4 +1,4 @@
-/* docs/css/style.css */
+/* docs/source/css/style.css */
 :root {
     --font-body:
         -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Roboto, Cantarell, Fira Sans,
@@ -211,4 +211,4 @@ kbd {
     vertical-align: baseline;
 }
 
-/* docs/css/00-index.css */
+/* docs/source/css/00-index.css */
