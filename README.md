@@ -51,17 +51,17 @@ GitHub Pages publishes from the `docs/` folder.
 ## BookStack Customization Links
 
 ```html
-<link rel="stylesheet" href="https://gsu-lib.github.io/bookstack-js-css/css/main.css" />
+<link rel="stylesheet" href="https://gsu-library.github.io/bookstack-js-css/css/main.css" />
 ```
 
 or
 
 ```html
-<link rel="stylesheet" href="https://gsu-lib.github.io/bookstack-js-css/css/main.min.css" />
+<link rel="stylesheet" href="https://gsu-libibrary.github.io/bookstack-js-css/css/main.min.css" />
 ```
 
 If a JavaScript file exists in `docs/js/`:
 
 ```html
-<script src="https://gsu-lib.github.io/bookstack-js-css/js/<filename>.js"></script>
+<script src="https://gsu-library.github.io/bookstack-js-css/js/<filename>.js"></script>
 ```
