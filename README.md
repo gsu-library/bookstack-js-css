@@ -9,15 +9,15 @@ CSS is built from source files under `docs/css/` and published through GitHub Pa
 
 ```text
 .
-├── build-css.js            # esbuild script for CSS bundles
+├── build-css.js            # Script (esbuild) for CSS concatenation and minification
 ├── package.json            # npm scripts and dev dependencies
-└── docs/
-      ├── css/
+└── docs/                   # GitHub Pages publishing source
+      ├── css/              # CSS files
       │   ├── 00-index.css    # CSS entry point
       │   ├── *.css           # authored styles
       │   ├── main.css        # generated (expanded bundle)
       │   └── main.min.css    # generated (minified bundle)
-      └── js/                 # placeholder directory
+    └── js/                 # placeholder directory
           └── gitkeep
 ```
 
