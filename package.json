@@ -1,0 +1,16 @@
+{
+  "name": "bookstack-js-css",
+  "version": "1.0.0",
+  "description": "JS, CSS assests for WSU Docs (Bookstack)",
+  "scripts": {
+    "format:css": "npx prettier --write docs/css/*.css",
+    "build:css": "node build-css.js",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "type": "module",
+  "devDependencies": {
+    "esbuild": "^0.28.0",
+    "prettier": "^3.8.1"
+  }
+}
