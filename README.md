@@ -46,7 +46,7 @@ JavaScript note:
 GitHub Pages publishes from the `main` branch's `docs/` folder.
 
 - Pages base URL: `https://gsu-lib.github.io/bookstack-js-css/`
-- Use published URLs for assets. The `raw.githubusercontent.com` URLs fail CSS/JS MIME type check (plain text).
+- Use published URLs for assets. The raw URLs fail CSS/JS MIME type check (plain text).
 
 ## BookStack Customization Links
 
