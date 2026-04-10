@@ -6,18 +6,18 @@ Deployed files are generated from files at `source/css`, and published on GitHub
 
 ## Production Assets:
 
-- `https://gsu-lib.github.io/bookstack-js-css/prod/css/main.css`
-- `https://gsu-lib.github.io/bookstack-js-css/prod/css/main.min.css`
+- `https://gsu-library.github.io/bookstack-js-css/prod/css/main.css`
+- `https://gsu-library.github.io/bookstack-js-css/prod/css/main.min.css`
 
 - `<link rel="stylesheet" href="https://gsu-library.github.io/bookstack-js-css/prod/css/main.css" />`
 - `<link rel="stylesheet" href="https://gsu-library.github.io/bookstack-js-css/prod/css/main.min.css" />`
 
 ## Development Assets:
 
-- `https://gsu-lib.github.io/bookstack-js-css/dev/css/main.css`
+- `https://gsu-library.github.io/bookstack-js-css/dev/css/main.css`
 - `<link rel="stylesheet" href="https://gsu-library.github.io/bookstack-js-css/dev/css/main.css" />`
 
-- `https://gsu-lib.github.io/bookstack-js-css/dev/css/main.min.css`
+- `https://gsu-library.github.io/bookstack-js-css/dev/css/main.min.css`
 - `<link rel="stylesheet" href="https://gsu-library.github.io/bookstack-js-css/dev/css/main.min.css" />`
 
 ## Development
@@ -51,5 +51,5 @@ JavaScript note:
 
 GitHub Pages publishes exclusively from the `main` branch `docs/` folder. The `prod` and `dev` setup and scripting is the workaround for the branch limitation.
 
-- Base URL: `https://gsu-lib.github.io/bookstack-js-css/`
+- Base URL: `https://gsu-library.github.io/bookstack-js-css/`
 - Use published URLs for assets, not the raw URLs.
