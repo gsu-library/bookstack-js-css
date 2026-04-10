@@ -1,6 +1,6 @@
 .page-content dl {
-    font-family: sans-serif;
-    line-height: 1.5;
+    font-family: var(--font-body);
+    line-height: var(--line-height-base);
 }
 
 .page-content dl > div {
@@ -22,7 +22,7 @@
 .page-content dd {
     flex: 1;
     margin: 0;
-    padding-left: 0.625rem;
+    padding-left: var(--space-l);
 }
 
 .page-content .table-container {
@@ -75,14 +75,14 @@ kbd {
     min-width: 1rem;
     text-align: center;
     font-family: var(--font-code);
-    font-size: 0.85em;
+    font-size: var(--text-kbd);
     line-height: 1;
     color: inherit;
     background-color: var(--bg-soft);
     border: 1px solid var(--border-strong);
     border-radius: var(--space-xs);
-    box-shadow: 0 0.125rem 0 var(--border-medium);
+    box-shadow: 0 var(--space-xs) 0 var(--border-medium);
     white-space: nowrap;
-    margin: 0 0.125rem;
+    margin: 0 var(--space-xs);
     vertical-align: baseline;
 }
