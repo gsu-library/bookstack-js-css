@@ -138,26 +138,36 @@ html.dark-mode body {
 
 /* source/css/components.css */
 .page-content dl {
-    font-family: var(--font-body);
-    line-height: var(--line-height-base);
-}
-.page-content dl > div {
-    display: flex;
-    flex-wrap: wrap;
-    padding: var(--space-l) var(--space-m);
-    border-bottom: 1px solid var(--border-subtle);
-}
-.page-content dl > div:hover {
-    background-color: var(--bg-soft);
+    max-width: var(--max-width-content);
+    margin-bottom: var(--space-p-gap);
 }
 .page-content dt {
-    flex: 0 0 3rem;
+    display: inline;
     font-weight: bold;
+    font-size: var(--text-base);
+}
+.page-content dt + dt::before {
+    content: ", ";
+    font-weight: normal;
 }
 .page-content dd {
-    flex: 1;
-    margin: 0;
-    padding-left: 0.625rem;
+    display: block;
+    margin-top: var(--space-s);
+    margin-left: 0;
+    padding-left: var(--space-l);
+    border-left: 3px solid var(--border-subtle);
+    font-size: var(--text-small);
+    line-height: var(--line-height-base);
+}
+.page-content dd + dd {
+    margin-top: var(--space-xs);
+    margin-bottom: 0;
+}
+.page-content dl > div {
+    margin-bottom: var(--space-giant);
+}
+.page-content dd:not(:has(+ dd)) {
+    margin-bottom: var(--space-giant);
 }
 .page-content .table-container {
     display: block;
