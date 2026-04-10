@@ -1,33 +1,3 @@
-/* source/css/reset.css */
-.page-content[class].page-content
-    *:not(
-        pre,
-        pre *,
-        code,
-        code *,
-        .hljs,
-        .hljs *,
-        dl,
-        dl *,
-        dt,
-        dd,
-        .cm-editor,
-        .cm-editor *,
-        .callout,
-        .callout *
-    ) {
-    all: revert;
-    box-sizing: border-box;
-}
-.page-content h1,
-.page-content h2,
-.page-content h3,
-.page-content h4,
-.page-content p,
-.page-content blockquote {
-    display: block;
-}
-
 /* source/css/variables.css */
 :root {
     --font-body:
@@ -75,7 +45,6 @@
 }
 :root.dark-mode {
     --color-primary: #195785;
-    --color-primary-light: rgba(32, 110, 167, 0.15);
     --color-link: #429fe3;
     --color-bookshelf: #ff5454;
     --color-book: #389f60;
@@ -155,7 +124,7 @@ html.dark-mode body {
 .page-content dd {
     flex: 1;
     margin: 0;
-    padding-left: var(--space-l);
+    padding-left: 0.625rem;
 }
 .page-content .table-container {
     display: block;
@@ -181,6 +150,10 @@ html.dark-mode body {
     padding: var(--space-l);
     font-size: var(--text-small);
     text-align: left;
+    white-space: normal;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    min-width: 14ch;
     border: none;
 }
 .page-content thead th {
@@ -193,6 +166,12 @@ html.dark-mode body {
 }
 .page-content tbody tr:hover {
     background-color: var(--bg-hover);
+}
+.page-content tfoot td {
+    padding: var(--space-xl) var(--space-l);
+    color: var(--border-strong);
+    border-top: 2px solid var(--border-medium);
+    word-break: normal;
 }
 kbd {
     display: inline-block;
@@ -212,7 +191,7 @@ kbd {
     vertical-align: baseline;
 }
 
-/* source/css/utilities.css */
+/* source/css/app-ui.css */
 .breadcrumbs,
 .page-navigation,
 .tri-layout-left-contents > *,

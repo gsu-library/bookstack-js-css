@@ -51,7 +51,6 @@
 
 :root.dark-mode {
     --color-primary: #195785;
-    --color-primary-light: rgba(32, 110, 167, 0.15);
     --color-link: #429fe3;
     --color-bookshelf: #ff5454;
     --color-book: #389f60;

@@ -2,8 +2,7 @@
 * Entry file for CSS build script
 */
 
-@import "reset.css";
 @import "variables.css";
 @import "base.css";
 @import "components.css";
-@import "utilities.css";
+@import "app-ui.css";
