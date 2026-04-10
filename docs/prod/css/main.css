@@ -99,6 +99,14 @@ html.dark-mode body {
 .page-content ol {
     padding-left: var(--space-xxxl);
 }
+.page-content li p {
+    margin-bottom: 0;
+    display: inline;
+}
+.page-content li > ul,
+.page-content li > ol {
+    margin-top: var(--space-xs);
+}
 .page-content li {
     margin-bottom: var(--space-xs);
 }
