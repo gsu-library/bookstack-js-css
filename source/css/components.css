@@ -83,7 +83,7 @@
 }
 
 /* Keyboard */
-kbd {
+.page-content kbd {
     display: inline-block;
     padding: var(--space-m) var(--space-l);
     min-width: 1rem;

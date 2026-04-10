@@ -1,26 +1,28 @@
 # Bookstack (WSU Docs) JS, CSS
 
-This repository (temporarily?) manages custom CSS and JS for the [WSU Docs (BookStack)](https://intranet.library.gsu.edu/docs/).
+This repository (temporarily?) manages custom CSS and JS for [WSU Docs (BookStack)](https://intranet.library.gsu.edu/docs/).
 
 Deployed files are generated from files at `source/css`, and published on GitHub Pages from `docs/prod/css` and `docs/dev/css` directory.
 
-## Production Assets:
+## Assets
 
-- `https://gsu-library.github.io/bookstack-js-css/prod/css/main.css`
-- `https://gsu-library.github.io/bookstack-js-css/prod/css/main.min.css`
+### Production:
 
-- `<link rel="stylesheet" href="https://gsu-library.github.io/bookstack-js-css/prod/css/main.css" />`
-- `<link rel="stylesheet" href="https://gsu-library.github.io/bookstack-js-css/prod/css/main.min.css" />`
+- Minified CSS: `https://gsu-library.github.io/bookstack-js-css/prod/css/main.min.css`
+- Formatted CSS: `https://gsu-library.github.io/bookstack-js-css/prod/css/main.css`
 
-## Development Assets:
+- Minified CSS: `<link rel="stylesheet" href="https://gsu-library.github.io/bookstack-js-css/prod/css/main.min.css" />`
+- Formatted CSS: `<link rel="stylesheet" href="https://gsu-library.github.io/bookstack-js-css/prod/css/main.css" />`
 
-- `https://gsu-library.github.io/bookstack-js-css/dev/css/main.css`
-- `<link rel="stylesheet" href="https://gsu-library.github.io/bookstack-js-css/dev/css/main.css" />`
+### Development:
 
-- `https://gsu-library.github.io/bookstack-js-css/dev/css/main.min.css`
-- `<link rel="stylesheet" href="https://gsu-library.github.io/bookstack-js-css/dev/css/main.min.css" />`
+- Minified CSS: `<link rel="stylesheet" href="https://gsu-library.github.io/bookstack-js-css/dev/css/main.css" />`
+- Formatted CSS: `https://gsu-library.github.io/bookstack-js-css/dev/css/main.css`
 
-## Development
+- Minified CSS: `<link rel="stylesheet" href="https://gsu-library.github.io/bookstack-js-css/dev/css/main.min.css" />`
+- Formatted CSS:`https://gsu-library.github.io/bookstack-js-css/dev/css/main.min.css`
+
+## Development Commands
 
 - Install dependencies: `npm install`
 
@@ -42,7 +44,7 @@ The `npm run build:css -- <dev|prod>` command references `docs/source/css/index.
 - `docs/<prod|dev>/main.css` (expanded)
 - `docs/<prod|dev>/main.min.css` (minified)
 
-JavaScript note:
+## JavaScript:
 
 - There is no JavaScript script.
 - JavaScript files in `docs/<prod|dev>/js/`, are accessible via GitHub Pages.

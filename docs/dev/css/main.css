@@ -71,7 +71,7 @@ html.dark-mode body {
 .page-content div.callout {
     max-width: var(--max-width-content);
     margin-block: 0;
-    margin-block-end: var(--space-p-gap);
+    margin-bottom: var(--space-p-gap);
 }
 .page-content h1 {
     font-size: var(--text-h1);
@@ -99,19 +99,24 @@ html.dark-mode body {
 .page-content ol {
     padding-left: var(--space-xxxl);
 }
+.page-content li ul,
+.page-content li ol {
+    margin-bottom: var(--space-xs);
+    margin-top: var(--space-xs);
+}
 .page-content li p {
-    margin-bottom: 0;
-    display: inline;
+    margin-bottom: var(--space-xs);
 }
 .page-content li > ul,
 .page-content li > ol {
     margin-top: var(--space-xs);
-}
-.page-content li {
     margin-bottom: var(--space-xs);
 }
-.page-content li > * {
-    margin-block-start: var(--space-xs);
+.page-content li {
+    margin-bottom: var(--space-s);
+}
+.page-content li > * + * {
+    margin-top: var(--space-xs);
 }
 .page-content ol ol {
     list-style-type: lower-alpha;
@@ -190,7 +195,7 @@ html.dark-mode body {
     border-top: 2px solid var(--border-medium);
     word-break: normal;
 }
-kbd {
+.page-content kbd {
     display: inline-block;
     padding: var(--space-m) var(--space-l);
     min-width: 1rem;

@@ -15,7 +15,7 @@ html.dark-mode body {
 .page-content div.callout {
     max-width: var(--max-width-content);
     margin-block: 0;
-    margin-block-end: var(--space-p-gap);
+    margin-bottom: var(--space-p-gap);
 }
 
 /* Headings */
@@ -53,22 +53,28 @@ html.dark-mode body {
     padding-left: var(--space-xxxl);
 }
 
+.page-content li ul,
+.page-content li ol {
+    margin-bottom: var(--space-xs);
+    margin-top: var(--space-xs);
+}
+
 .page-content li p {
-    margin-bottom: 0;
-    display: inline;
+    margin-bottom: var(--space-xs);
 }
 
 .page-content li > ul,
 .page-content li > ol {
     margin-top: var(--space-xs);
-}
-
-.page-content li {
     margin-bottom: var(--space-xs);
 }
 
-.page-content li > * {
-    margin-block-start: var(--space-xs);
+.page-content li {
+    margin-bottom: var(--space-s);
+}
+
+.page-content li > * + * {
+    margin-top: var(--space-xs);
 }
 
 /* Nested List Logic */
