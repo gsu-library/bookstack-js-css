@@ -1,0 +1,39 @@
+.breadcrumbs,
+.page-navigation,
+.tri-layout-left-contents > *,
+.tri-layout-right-contents > * {
+    opacity: 1 !important;
+}
+
+.tri-layout-left-contents #recent-activity.mb-xl {
+    display: none !important;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.text-left {
+    text-align: left !important;
+}
+.text-center {
+    text-align: center !important;
+}
+.text-right {
+    text-align: right !important;
+}
+
+.u-hidden {
+    display: none !important;
+}
+.u-visible {
+    display: block !important;
+}

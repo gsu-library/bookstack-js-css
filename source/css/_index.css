@@ -1,5 +1,3 @@
-/* @import "style.css"; */
-
 /*
 * Entry file for CSS build script - Defines layers and imports files
 *  - Define layers in desired import order
@@ -10,9 +8,10 @@
 *  - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@layer
 */
 
-@layer reset, theme, components, utilities;
+@layer reset, variables, base, components, utilities;
 
 @import "reset.css" layer(reset);
-@import "theme.css" layer(theme);
+@import "variables.css" layer(variables);
+@import "base.css" layer(base);
 @import "components.css" layer(components);
 @import "utilities.css" layer(utilities);

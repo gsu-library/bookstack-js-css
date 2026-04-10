@@ -5,7 +5,7 @@ import fs from 'fs';
 import path from 'path';
 
 // CSS file index for bundle
-const indexCSS = 'source/css/index.css';
+const indexCSS = 'source/css/_index.css';
 
 // Get target application/deployment from the arguments
 const deployTier = process.argv[2] || 'unspecified';

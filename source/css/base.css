@@ -1,0 +1,70 @@
+.page-content {
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    line-height: var(--line-height-base);
+    color: inherit;
+}
+
+.page-content > *,
+.page-content div.callout {
+    margin-block-start: 0;
+    margin-block-end: var(--space-l);
+}
+
+.page-content h1 {
+    font-size: var(--text-h1);
+    margin-bottom: var(--space-xl);
+    line-height: 1.2;
+}
+
+.page-content h2 {
+    font-size: var(--text-h2);
+    margin-top: var(--space-xxl);
+    margin-bottom: var(--space-l);
+    line-height: 1.3;
+}
+
+.page-content h3 {
+    font-size: var(--text-h3);
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-m);
+    line-height: 1.4;
+}
+
+.page-content ul,
+.page-content ol {
+    padding-left: 1.5rem;
+}
+
+.page-content li {
+    margin-bottom: var(--space-xs);
+}
+
+.page-content li > * {
+    margin-block-start: var(--space-xs);
+}
+
+.page-content ol ol {
+    list-style-type: lower-alpha;
+}
+.page-content ol ol ol {
+    list-style-type: lower-roman;
+}
+
+.page-content blockquote {
+    margin-inline: 0;
+    padding: var(--space-s) var(--space-l);
+    border-left: 4px solid var(--border-medium);
+}
+
+.page-content blockquote:before {
+    content: "";
+}
+
+.page-content blockquote p:last-child {
+    margin-bottom: 0.3em;
+}
+
+html.dark-mode body {
+    color: var(--color-text);
+}
