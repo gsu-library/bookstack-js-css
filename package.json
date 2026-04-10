@@ -4,9 +4,10 @@
   "description": "JS, CSS assests for WSU Docs (Bookstack)",
   "scripts": {
     "build:css": "node build-css.js",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "format:css": "prettier --write docs/**/*.css"
+    "postbuild:css": "npm run format:css",
+    "format:check": "prettier --write .",
+    "format:all": "prettier --write .",
+    "format:css": "prettier --write 'docs/**/*.css' 'source/**/*.css'"
   },
   "type": "module",
   "devDependencies": {

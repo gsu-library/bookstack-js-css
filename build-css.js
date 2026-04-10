@@ -20,7 +20,7 @@ if (!['dev', 'prod'].includes(deployTier)) {
 }
 
 // Set the destination for the CSS output
-const deployDir = path.join('docs/', deployTier);
+const deployDir = path.join('docs/', deployTier, '/css/');
 
 function verifyDeployDir(dir) {
   fs.mkdirSync(dir, { recursive: true });
