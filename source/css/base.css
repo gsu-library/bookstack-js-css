@@ -1,3 +1,4 @@
+/* Core Layout & Colors */
 html.dark-mode body {
     color: var(--color-text-dark-mode);
 }
@@ -7,6 +8,37 @@ html.dark-mode body {
     line-height: var(--line-height-base);
 }
 
+/* Document Rhythm: Paragraphs and Lists */
+.page-content p,
+.page-content ul,
+.page-content ol,
+.page-content div.callout {
+    max-width: var(--max-width-content);
+    margin-block: 0;
+    margin-block-end: var(--space-p-gap);
+}
+
+/* Headings */
+.page-content h1 {
+    font-size: var(--text-h1);
+    margin-bottom: var(--space-xxxl);
+}
+
+.page-content h2 {
+    font-size: var(--text-h2);
+    margin-top: var(--space-section-gap);
+    margin-bottom: var(--space-heading-gap);
+    border-bottom: 1px solid var(--border-subtle);
+    padding-bottom: var(--space-xs);
+}
+
+.page-content h3 {
+    font-size: var(--text-h3);
+    margin-top: var(--space-xxxl);
+    margin-bottom: var(--space-heading-gap);
+}
+
+/* Blockquotes */
 .page-content blockquote:before {
     content: "";
 }
@@ -15,29 +47,7 @@ html.dark-mode body {
     margin-bottom: var(--space-blockquote-p);
 }
 
-.page-content > *,
-.page-content div.callout {
-    margin-block: 0;
-    margin-block-end: var(--space-xxl);
-}
-
-.page-content h1 {
-    font-size: var(--text-h1);
-    margin-bottom: var(--space-xxxl);
-}
-
-.page-content h2 {
-    font-size: var(--text-h2);
-    margin-top: var(--space-giant);
-    margin-bottom: var(--space-xl);
-}
-
-.page-content h3 {
-    font-size: var(--text-h3);
-    margin-top: var(--space-xxxl);
-    margin-bottom: var(--space-l);
-}
-
+/* List Item Specifics */
 .page-content ul,
 .page-content ol {
     padding-left: var(--space-xxxl);
@@ -51,6 +61,7 @@ html.dark-mode body {
     margin-block-start: var(--space-xs);
 }
 
+/* Nested List Logic */
 .page-content ol ol {
     list-style-type: lower-alpha;
 }
