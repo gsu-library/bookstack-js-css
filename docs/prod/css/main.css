@@ -217,7 +217,8 @@ html.dark-mode body {
 .breadcrumbs,
 .page-navigation,
 .tri-layout-left-contents > *,
-.tri-layout-right-contents > * {
+.tri-layout-right-contents > *,
+#sibling-navigation {
     opacity: 1 !important;
 }
 .tri-layout-left-contents #recent-activity.mb-xl {

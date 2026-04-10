@@ -1,7 +1,8 @@
 .breadcrumbs,
 .page-navigation,
 .tri-layout-left-contents > *,
-.tri-layout-right-contents > * {
+.tri-layout-right-contents > *,
+#sibling-navigation {
     opacity: 1 !important;
 }
 
