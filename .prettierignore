@@ -1,2 +1,4 @@
-docs/**/*.min.css
-docs/**/*.min.css
+*.min.css
+*.min.js
+*-min.css
+*-min.js

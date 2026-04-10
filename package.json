@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "JS, CSS assests for WSU Docs (Bookstack)",
   "scripts": {
-    "buildcss:dev": "node build-css.js dev; npm run format:css",
-    "buildcss:prod": "node build-css.js prod; npm run format:css",
+    "build:css": "node build-css.js",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "format:css": "prettier --write docs/**/*.css"

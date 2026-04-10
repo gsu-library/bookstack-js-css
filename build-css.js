@@ -1,41 +1,53 @@
+#!/usr/bin/env node
+
 import * as esbuild from 'esbuild';
 import fs from 'fs';
 import path from 'path';
 
-const cssIndex = 'docs/source/css/00-index.css';
+// CSS file index for bundle
+const indexCSS = 'source/css/index.css';
 
-const mode = process.argv[2] || 'dev';
+// Get target application/deployment from the arguments
+const deployTier = process.argv[2] || 'unspecified';
 
-if (!['dev', 'prod'].includes(mode)) {
-  console.error('You must specify :dev or :prod');
+// Verify valid application/deployment
+if (!['dev', 'prod'].includes(deployTier)) {
+  console.log(
+    `\x1b[33mWarning:\x1b[0m Invalid deployTier "\x1b[31m${deployTier}\x1b[0m\n".
+      \t Use: \x1b[1mnpm run build:css -- <dev|prod>\x1b[0m\n`,
+  );
   process.exit(1);
 }
 
-const outDir = path.join('docs/', mode);
+// Set the destination for the CSS output
+const deployDir = path.join('docs/', deployTier);
 
-function verifyDirectory(dir) {
+function verifyDeployDir(dir) {
   fs.mkdirSync(dir, { recursive: true });
 }
 
-async function buildCSS(targetDir) {
+/**
+ * Build the formatted and minified CSS files
+ */
+async function buildCSS(deployDir) {
   try {
-    verifyDirectory(targetDir);
+    verifyDeployDir(deployDir);
 
-    const cssExpanded = path.join(targetDir, 'main.css');
-    const cssMinified = path.join(targetDir, 'main.min.css');
+    const cssFormatted = path.join(deployDir, 'main.css');
+    const cssMinified = path.join(deployDir, 'main.min.css');
 
     await Promise.all([
-      // Non-minified version
+      // Formatted CSS
       esbuild.build({
-        entryPoints: [cssIndex],
+        entryPoints: [indexCSS],
         bundle: true,
-        outfile: cssExpanded,
+        outfile: cssFormatted,
         minify: false,
         write: true,
       }),
-      // Minified version
+      // Minified CSS
       esbuild.build({
-        entryPoints: [cssIndex],
+        entryPoints: [indexCSS],
         bundle: true,
         outfile: cssMinified,
         minify: true,
@@ -43,11 +55,11 @@ async function buildCSS(targetDir) {
       }),
     ]);
 
-    console.log(`CSS for ${mode} written to ${targetDir}`);
+    console.log(`\n\x1b[32m\t\u2713 CSS for ${deployTier} written to ${deployDir}\x1b[0m\n`);
   } catch (error) {
-    console.error('Build failed', error);
+    console.error('\x1b[31mBuild failed\x1b[0m]', error);
     process.exit(1);
   }
 }
 
-buildCSS(outDir);
+buildCSS(deployDir);
