@@ -1,1 +1,18 @@
-@import "style.css";
+/* @import "style.css"; */
+
+/*
+* Entry file for CSS build script - Defines layers and imports files
+*  - Define layers in desired import order
+*  - Assign each import file to a layer
+*
+* References:
+*  - https://caniuse.com/css-cascade-layers
+*  - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@layer
+*/
+
+@layer reset, theme, components, utilities;
+
+@import "reset.css" layer(reset);
+@import "theme.css" layer(theme);
+@import "components.css" layer(components);
+@import "utilities.css" layer(utilities);
