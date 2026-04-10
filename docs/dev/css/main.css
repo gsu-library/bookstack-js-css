@@ -34,8 +34,6 @@
     --text-kbd: 0.85em;
     --line-height-base: 1.55;
     --max-width-content: 85ch;
-    --heading-top-multiplier: 2;
-    --heading-bottom-multiplier: 0.5;
     --space-xs: 0.25rem;
     --space-s: 0.375rem;
     --space-m: 0.5rem;
@@ -44,9 +42,9 @@
     --space-xxl: 1.25rem;
     --space-xxxl: 1.5rem;
     --space-giant: 2rem;
-    --space-p-gap: var(--space-xxxl);
-    --space-heading-gap: var(--space-l);
-    --space-section-gap: calc(var(--space-giant) + var(--space-xxxl));
+    --space-p-gap: var(--space-xl);
+    --space-heading-top: var(--space-xxxl);
+    --space-heading-bottom: var(--space-m);
     --space-blockquote-p: 0.3em;
 }
 :root.dark-mode {
@@ -79,30 +77,28 @@ html.dark-mode body {
     font-size: var(--text-h1);
     margin-bottom: var(--space-xxxl);
 }
+.page-content h2,
+.page-content h3,
+.page-content h4,
+.page-content h5 {
+    margin-top: var(--space-heading-top);
+    margin-bottom: var(--space-heading-bottom);
+}
 .page-content h2 {
     font-size: var(--text-h2);
-    margin-top: calc(var(--text-h2) * var(--heading-top-multiplier));
-    margin-bottom: calc(var(--text-h2) * var(--heading-bottom-multiplier));
+    margin-top: var(--space-giant);
     border-bottom: 1px solid var(--border-subtle);
     padding-bottom: var(--space-xs);
 }
 .page-content h3 {
     font-size: var(--text-h3);
-    margin-top: calc(var(--text-h3) * 1.5);
-    margin-bottom: calc(var(--text-h3) * var(--heading-bottom-multiplier));
-}
-.page-content h4,
-.page-content h5 {
-    margin-bottom: calc(var(--text-h4) * var(--heading-bottom-multiplier));
 }
 .page-content h4 {
     font-size: var(--text-h4);
-    margin-top: calc(var(--text-h4) * 1.25);
 }
 .page-content h5 {
     font-size: var(--text-base);
     font-weight: bold;
-    margin-top: var(--space-xl);
 }
 .page-content blockquote:before {
     content: "";

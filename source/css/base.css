@@ -24,34 +24,30 @@ html.dark-mode body {
     margin-bottom: var(--space-xxxl);
 }
 
+.page-content h2,
+.page-content h3,
+.page-content h4,
+.page-content h5 {
+    margin-top: var(--space-heading-top);
+    margin-bottom: var(--space-heading-bottom);
+}
+
 .page-content h2 {
     font-size: var(--text-h2);
-    margin-top: calc(var(--text-h2) * var(--heading-top-multiplier));
-    margin-bottom: calc(var(--text-h2) * var(--heading-bottom-multiplier));
+    margin-top: var(--space-giant); /* Slightly more air for top-level headers */
     border-bottom: 1px solid var(--border-subtle);
     padding-bottom: var(--space-xs);
 }
 
 .page-content h3 {
     font-size: var(--text-h3);
-    margin-top: calc(var(--text-h3) * 1.5);
-    margin-bottom: calc(var(--text-h3) * var(--heading-bottom-multiplier));
 }
-
-.page-content h4,
-.page-content h5 {
-    margin-bottom: calc(var(--text-h4) * var(--heading-bottom-multiplier));
-}
-
 .page-content h4 {
     font-size: var(--text-h4);
-    margin-top: calc(var(--text-h4) * 1.25);
 }
-
 .page-content h5 {
     font-size: var(--text-base);
     font-weight: bold;
-    margin-top: var(--space-xl);
 }
 
 /* Blockquotes */
