@@ -1,5 +1,7 @@
-/* Definition Lists */
+/* Components, Heavily Styled, Complex Elements */
 
+/* Definition Lists:  */
+/* https://intranet.library.gsu.edu/docs/books/bookstack-docs-customization/page/component-styling#bkmrk-definition-lists */
 .page-content dl {
     max-width: var(--max-width-content);
     margin-bottom: var(--space-p-gap);
@@ -21,7 +23,7 @@
     margin-top: var(--space-s);
     margin-left: 0;
     padding-left: var(--space-l);
-    border-left: 3px solid var(--border-subtle);
+    border-left: 3px solid var(--border-normal);
     font-size: var(--text-small);
 
     line-height: var(--line-height-base);
@@ -41,6 +43,7 @@
 }
 
 /* Tables */
+/* https://intranet.library.gsu.edu/docs/books/bookstack-docs-customization/page/component-styling#bkmrk-tables */
 .page-content .table-container {
     display: block;
     width: 100%;
@@ -76,13 +79,13 @@
 }
 
 .page-content thead th {
-    background-color: var(--border-subtle);
+    background-color: var(--border-normal);
     border-bottom: 2px solid var(--border-medium);
     font-weight: bold;
 }
 
 .page-content tbody td {
-    border-bottom: 1px solid var(--border-subtle);
+    border-bottom: 1px solid var(--border-normal);
 }
 
 .page-content tbody tr:hover {
@@ -91,12 +94,13 @@
 
 .page-content tfoot td {
     padding: var(--space-xl) var(--space-l);
-    color: var(--border-strong);
+    color: var(--border-bold);
     border-top: 2px solid var(--border-medium);
     word-break: normal;
 }
 
 /* Keyboard */
+/* https://intranet.library.gsu.edu/docs/books/bookstack-docs-customization/page/component-styling#bkmrk-inline-elements */
 .page-content kbd {
     display: inline-block;
     padding: var(--space-m) var(--space-l);
@@ -107,7 +111,7 @@
     line-height: 1;
     color: inherit;
     background-color: var(--bg-soft);
-    border: 1px solid var(--border-strong);
+    border: 1px solid var(--border-bold);
     border-radius: var(--space-xs);
     box-shadow: 0 var(--space-xs) 0 var(--border-medium);
     white-space: nowrap;
