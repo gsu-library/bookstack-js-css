@@ -26,7 +26,8 @@
     --bg-hover: rgba(128, 128, 128, 0.07);
     --bg-key: rgba(128, 128, 128, 0.03);
     --text-base: 1rem;
-    --text-h1: 2.25rem;
+    --text-h1--title: 2.25rem;
+    --text-h1: 2.0125rem;
     --text-h2: 1.5rem;
     --text-h3: 1.25rem;
     --text-h4: 1.125rem;
@@ -73,6 +74,10 @@ html.dark-mode body {
     max-width: var(--max-width-content);
     margin-block: 0;
     margin-bottom: var(--space-p-gap);
+}
+.page-content h1.page-title {
+    font-size: var(--text-h1--title);
+    margin-bottom: var(--space-xxxl);
 }
 .page-content h1 {
     font-size: var(--text-h1);

@@ -31,7 +31,10 @@
     --bg-key: rgba(128, 128, 128, 0.03);
 
     --text-base: 1rem;
-    --text-h1: 2.25rem;
+    --text-h1--title: 2.25rem;
+    /* Make h1, h2 same? */
+    /* If so, adjust scale for better proportions */
+    --text-h1: 2.0125rem;
     --text-h2: 1.5rem;
     --text-h3: 1.25rem;
     --text-h4: 1.125rem;

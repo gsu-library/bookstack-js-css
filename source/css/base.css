@@ -19,6 +19,12 @@ html.dark-mode body {
 }
 
 /* Headings */
+.page-content h1.page-title {
+    font-size: var(--text-h1--title);
+    margin-bottom: var(--space-xxxl);
+}
+
+/* Not sure about sizing: Make h1, h2 same? */
 .page-content h1 {
     font-size: var(--text-h1);
     margin-bottom: var(--space-xxxl);
