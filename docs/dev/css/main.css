@@ -75,7 +75,7 @@ html.dark-mode body {
     margin-block: 0;
     margin-bottom: var(--space-p-gap);
 }
-.page-content h1.page-title {
+.page-content h1#bkmrk-page-title {
     font-size: var(--text-h1--title);
     margin-bottom: var(--space-xxxl);
 }

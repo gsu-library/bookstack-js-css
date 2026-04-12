@@ -19,7 +19,7 @@ html.dark-mode body {
 }
 
 /* Headings */
-.page-content h1.page-title {
+.page-content h1#bkmrk-page-title {
     font-size: var(--text-h1--title);
     margin-bottom: var(--space-xxxl);
 }
