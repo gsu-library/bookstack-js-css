@@ -1,18 +1,21 @@
-/* Components, Heavily Styled, Complex Elements */
+/*  ====================================================
+    Components
+    ==================================================== */
 
-/* Definition Lists:  */
-/* https://intranet.library.gsu.edu/docs/books/bookstack-docs-customization/page/component-styling#bkmrk-definition-lists */
+/* Definition Lists */
 .page-content dl {
     max-width: var(--max-width-content);
     margin-bottom: var(--space-p-gap);
 }
 
+/* Render multiple DTs inline */
 .page-content dt {
     display: inline;
     font-weight: bold;
-    font-size: var(--text-base);
+    font-size: var(--text-body);
 }
 
+/* Differentiate multiple inline DTs */
 .page-content dt + dt::before {
     content: ", ";
     font-weight: normal;
@@ -34,6 +37,8 @@
     margin-bottom: 0;
 }
 
+/* Space out DIV > DT + DL groups */
+/* JMB: Too much space? */
 .page-content dl > div {
     margin-bottom: var(--space-giant);
 }
@@ -43,7 +48,6 @@
 }
 
 /* Tables */
-/* https://intranet.library.gsu.edu/docs/books/bookstack-docs-customization/page/component-styling#bkmrk-tables */
 .page-content .table-container {
     display: block;
     width: 100%;
@@ -61,9 +65,9 @@
 
 .page-content caption {
     font-weight: bold;
-    padding: var(--space-l);
+    padding: var(--space-l) var(--space-none);
     text-align: left;
-    font-size: var(--text-h4);
+    font-size: var(--text-heading-quaternary);
 }
 
 .page-content th,
@@ -99,15 +103,14 @@
     word-break: normal;
 }
 
-/* Keyboard */
-/* https://intranet.library.gsu.edu/docs/books/bookstack-docs-customization/page/component-styling#bkmrk-inline-elements */
+/* Keyboard element, <KBD> */
 .page-content kbd {
     display: inline-block;
     padding: var(--space-m) var(--space-l);
     min-width: 1rem;
     text-align: center;
     font-family: var(--font-code);
-    font-size: var(--text-kbd);
+    font-size: var(--text-small);
     line-height: 1;
     color: inherit;
     background-color: var(--bg-soft);

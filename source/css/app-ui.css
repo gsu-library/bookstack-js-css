@@ -1,4 +1,7 @@
-/* Overrides for app ui/chrome - Not .page-content ... */
+/*  ====================================================
+    Overrides outside of .page-content scope /
+    System UI components, etc
+    ==================================================== */
 .breadcrumbs,
 .page-navigation,
 .tri-layout-left-contents > *,
