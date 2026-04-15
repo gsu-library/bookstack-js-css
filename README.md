@@ -2,7 +2,7 @@
 
 This repository (temporarily?) manages custom CSS and JS for [WSU Docs (BookStack)](https://intranet.library.gsu.edu/docs/).
 
-Deployed files are generated from files at `source/css`, and published on GitHub Pages from `docs/prod/css` and `docs/dev/css` directory.
+Deployed files are generated from files at `source/css`, and published on GitHub Pages from the `docs/prod/css` and `docs/dev/css` directories.
 
 ## Assets
 

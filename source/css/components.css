@@ -38,7 +38,7 @@
 }
 
 /* Space out DIV > DT + DL groups */
-/* JMB: Too much space? */
+/* TODO: Evaluate - Too much space? */
 .page-content dl > div {
     margin-bottom: var(--space-giant);
 }

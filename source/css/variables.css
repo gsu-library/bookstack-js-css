@@ -6,6 +6,7 @@
 
 :root {
     /* System: Fonts */
+    /* NOTE: Overrides default BookStack font stacks. */
     --font-body:
         -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Roboto, Cantarell,
         "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -42,7 +43,7 @@
     /* Custom: Typography scale */
     --text-base: 1rem;
 
-    /* Custom: Sets the Bookstack page titie; outside .page-content scope */
+    /* Custom: Sets the Bookstack page title; outside .page-content scope */
     --text-page-title: 2.25rem;
 
     /* Custom: Page content hierarchy */
